@@ -28,8 +28,8 @@ if setup == '1':
     with open('user/password.txt', 'w') as f:
         f.writelines(pas)
     print("TESTOS Setup has been Completed!!!")
-    time.sleep(2)
-    input("Press Enter to close the tab...")
+    time.sleep(1)
+    os.startfile('home.py')
     exit()
 
 if setup == '2':
