@@ -42,6 +42,9 @@ if setup == '2':
     l_p = login_pass.read()
     l_n = login_name.read()
 
+else: # If no input then exit the program
+    exit()
+
 while True:
     login = input(str("Enter your password To " + l_n + ": "))
     if login == l_p:
