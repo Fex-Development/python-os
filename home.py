@@ -96,7 +96,7 @@ if select == '6':
 exit()
 if select == '7':
     os.startfile('home.py')
-    os.startfile('file.py')
+    os.startfile('FileExplorer.py')
 if select == '8':
 	os.system('exit')
 input()
