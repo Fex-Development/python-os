@@ -21,6 +21,10 @@ if setup == '1':
     pas = input(str("Enter your password to login: "))
 
     lines = [name]
+
+    if not os.path.exists("user"): # Checks if folder doesn't exist
+        os.mkdir("user") # Create folder if doesn't exist
+
     with open("user/username.txt", "w") as f:
         f.writelines(name)
 
@@ -37,6 +41,9 @@ if setup == '2':
     login_name = open('user/username.txt')
     l_p = login_pass.read()
     l_n = login_name.read()
+
+else: # If no input then exit the program
+    exit()
 
 while True:
     login = input(str("Enter your password To " + l_n + ": "))
