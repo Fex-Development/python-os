@@ -16,4 +16,6 @@ Lynix
 ```
 $ python3 testos.py
 ```
-if you have any issue setting the python os create a issue in https://github.com/Nightmaregodss/python-os/issues
+If find any bug consider reporting it at https://github.com/Fex-Development/python-os .
+
+If you think we did a good job then star the repo and if you get any issue in python os or you want to suggest something consider joining our [Discord](https://discord.gg/d3eACkqyyT)
