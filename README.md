@@ -2,6 +2,9 @@
 
 a simple os made in python
 
+# Owns
+`python-os` is owned by [*Fex Development*](https://fexhub.site) and it needs developer join there [Discord](https://discord.gg/d3eACkqyyT) to apply!!!
+
 # setup
 create a new folder called **user** to the code to work
 
