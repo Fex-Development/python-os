@@ -26,7 +26,7 @@ print(jls_extract_var + str(battery.power_plugged))
 jls_extract_var = "The battery time is: "
 print(jls_extract_var + str(battery.secsleft) + " seconds")
 jls_extract_var = """
-[1] To Open Google
+[1] To Open Search Engine + Browser
 [2] To Open Text Editor
 [3] To Photos Viewer
 [4] To Open Confignre and Open BioS
