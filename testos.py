@@ -1,5 +1,7 @@
+# Fix by peggy
+
 import time
-import os
+import os, platform
 
 jls_extract_var = """
 ████████████████████████████████████
@@ -33,7 +35,14 @@ if setup == '1':
         f.writelines(pas)
     print("TESTOS Setup has been Completed!!!")
     time.sleep(1)
-    os.startfile('home.py')
+    if platform.system() == "Darwin":
+      os.system("open home.py")
+    elif platform.system() == "Windows":
+        os.startfile('home.py')
+    elif platform.system() == "Linux":
+        os.system("xdg-open home.py")
+    else:
+         print("Host OS unsupported.")
     exit()
 
 if setup == '2':
@@ -48,7 +57,14 @@ else: # If no input then exit the program
 while True:
     login = input(str("Enter your password To " + l_n + ": "))
     if login == l_p:
-        os.startfile("home.py")
+        if platform.system() == "Darwin":
+          os.system("open home.py")
+        elif platform.system() == "Windows":
+            os.startfile("home.py")
+        elif platform.system() == "Linux":
+            os.system("xdg-open home.py")
+        else:
+             print("Host OS unsupported.")
         break
     else:
         print("Wrong password!")
