@@ -1,5 +1,5 @@
 # python-os
-
+# Reached EOL
 a simple os made in python
 
 # Owns
